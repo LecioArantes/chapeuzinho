@@ -3,6 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho H6 no Canto Esquerdo</title>
+    <style>
+        h6 {
+            position: absolute; /* Posicionamento absoluto */
+            top: 0; /* Distância do topo */
+            left: 0; /* Distância da esquerda */
+            margin: 10px; /* Espaçamento opcional */
+        }
+    </style>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chapeuzinho Vermelho</title>
     <style>
         body {
@@ -33,7 +46,7 @@
         }
         .navigation {
             position: absolute;
-            bottom: 30px;
+            bottom: 50px;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -41,18 +54,18 @@
             box-sizing: border-box;
         }
         button {
-            font-size: 1.0rem;
+            font-size: 4.0rem;
             padding: 12px 22px;
             cursor: pointer;
             border: none;
-            background-color: #004d4d;
+            background-color: #909f9f;
             color: white;
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>📖 👧🏻👒🔴</h1>
+    <h6>📖 👧🏻👒🔴</h6>
     
     <div class="slide active">
         <img src="chapeuzinhovermelho.png" alt="Chapeuzinho Vermelho">
@@ -136,8 +149,8 @@
     </div>
     
     <div class="navigation">
-        <button onclick="changeSlide(-1)">⬅️</button>
-        <button onclick="changeSlide(1)">➡️</button>
+        <button onclick="changeSlide(-1)">↩</button>
+        <button onclick="changeSlide(1)">⏭</button>
     </div>
 
     <script>
